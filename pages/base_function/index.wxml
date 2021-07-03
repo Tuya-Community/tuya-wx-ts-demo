@@ -1,0 +1,12 @@
+<!--miniprogram/pages/base_function/index.wxml-->
+<view class="root">
+  <block wx:for="{{list}}" wx:for-item="item">
+    <view class="list-item" data-url="{{item.url}}" bindtap="gotoOtherage">
+      <view class="list-item-header">
+        <view class="list-item-header-name">{{item.name}}</view>
+        <view class="list-item-header-text">{{item.text}}</view>
+      </view>
+      <van-icon name="arrow" size="12px" />
+    </view>
+  </block>
+</view>

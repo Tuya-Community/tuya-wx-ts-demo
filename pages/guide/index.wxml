@@ -1,0 +1,31 @@
+<!--pages/guide/index.wxml-->
+
+<view class="root">
+  <view class="list-item" data-url="{{cloudInner.url}}" bindtap="gotoOtherage">
+    <view class="list-item-header">
+      <view class="list-item-header-name" style="margin-right: 5px">{{cloudInner.isDroped ? "云函数部署":"体验Demo前请先检测云函数部署"}}
+      </view>
+      <block wx:if="{{cloudInner.isDroped}}">
+        <van-icon size="24px" name="passed" color="#00cc99" />
+      </block>
+    </view>
+    <van-icon name="arrow" size="12px" />
+  </view>
+
+  <block wx:for="{{list}}" wx:for-item="item">
+    <view class="list-item" data-url="{{item.url}}" bindtap="gotoOtherage">
+      <view class="list-item-header">
+        <view class="list-item-header-name">{{item.name}}</view>
+        <view class="list-item-header-text">{{item.text}}</view>
+      </view>
+      <van-icon name="arrow" size="12px" />
+    </view>
+  </block>
+
+  <van-overlay show="{{ show }}" bind:click="onClickHide">
+    <view class="over-container">
+      <view class="over-label">请扫码体验涂鸦智能小程序</view>
+      <image src="../../image/tuya.jpg" class="" />
+    </view>
+  </van-overlay>
+</view>

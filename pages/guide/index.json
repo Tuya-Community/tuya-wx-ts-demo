@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-circle": "@vant/weapp/circle/index",
+    "van-overlay": "@vant/weapp/overlay/index"
+  },
+  "navigationBarTitleText": "小程序demo",
+  "navigationBarBackgroundColor": "#f8f8f8"
+}

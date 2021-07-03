@@ -1,0 +1,44 @@
+<View class="wrap">
+  <navbar device_name="{{device_name}}" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
+  <view class="control-box">
+    <view class="container">
+      <view class="content">
+        <view class="count-box">
+          <view class="count-box-value">100</view>
+          <view class="count-box-unit">个</view>
+        </view>
+        <view bindtap="sendCount1" class="count-tip">最近一次训练</view>
+
+        <view class="items">
+          <view class="item">
+            <view class="item-value">100</view>
+            <view class="item-label">小明</view>
+          </view>
+          <view class="item">
+            <view class="item-value">100</view>
+            <view class="item-label">小明</view>
+          </view>
+        </view>
+
+        <view class="mode-box">
+          <view bind:tap="connect" class="mode-item">
+            <view class="mode-item-left">
+              <view class="mode-item-title">连接蓝牙</view>
+            </view>
+          </view>
+          <view bind:tap="sendMod" class="mode-item">
+            <view class="mode-item-left">
+              <view class="mode-item-title">设置模式</view>
+            </view>
+          </view>
+          <view bind:tap="sendCount" class="mode-item">
+            <view class="mode-item-left">
+              <view class="mode-item-title">设置目标</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+</View>

@@ -1,0 +1,38 @@
+<!--pages/cloud_check/index.wxml-->
+<view class="root">
+
+  <view class="cloud-container" wx:if="{{percentage < 100 && errorText == ''}}">
+    <view class="cloud-check-title">小程序环境检测中...</view>
+    <view style="margin-bottom: 22px">
+      <van-progress percentage="{{percentage}}" color="#ff5a28" show-pivot="{{false}}" />
+    </view>
+    <view class="cloud-checking">
+      <van-loading size="24px">检测是否开通云开发</van-loading>
+      <van-loading size="24px">检测是否部署SDK</van-loading>
+      <van-loading size="24px">检测是否上传授权文件</van-loading>
+      <van-loading size="24px">检测调用云函数是否成功</van-loading>
+    </view>
+  </view>
+
+  <view class="cloud-fail" wx:if="{{errorText !== ''}}">
+    <van-icon custom-style="background-color: rgba(102, 102, 102, 0.3); border-radius: 50%" size="72px" color="#fff"
+      name="warning-o" />
+    <view class="cloud-fail-title">环境部署失败</view>
+    <view class="cloud-fail-label">检测到{{errorText}}， 请去涂鸦开发平台程序部署，如果依然失败，请通过工单联系我们</view>
+
+    <view class="cloud-success-btn" bindtap="checkCloud">
+      重新检测
+    </view>
+  </view>
+
+  <view class="cloud-success" wx:if="{{percentage == 100}}">
+    <view class="cloud-success-container">
+      <van-icon size="24px" name="passed" color="#00cc99" />
+      <view class="cloud-success-label">您的环境检测成功</view>
+    </view>
+    <view class="cloud-fail-btn" bindtap="backPage">
+      返回首页
+    </view>
+  </view>
+
+</view>
