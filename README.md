@@ -42,19 +42,18 @@ If no device is shown in the device list, you can click "Add Device", select "Sc
 <p align="center">Intelligent lamp</p>
 </p>
 
-## Demo 目录
+## File introduction
 
 ```
-├── cloudfunctions             // Cloud Function directory
-│   ├── ty-service            // SDK
-├── miniprogram                 // Applet home directory
-│   ├── image                   // The gallery
-│   ├── libs                   // Third-party libraries
-│   ├── pages                  // The directory for the specific page
-│   ├── app.js                 // Applet entry
-│   ├── app.json               // The configuration file
+├── components                 // components libraries
+├── image                      // The gallery
+├── libs                       // Third-party libraries
+├── pages                      // The directory for the specific page
+├── utils                      // Tools
+├── app.js                     // Applet entry
+├── app.json                   // The global configuration file
 ├── project.config.json        // Project profile
-└── README.md            // Description file
+└── README.md                  // Description file
 ```
 
 ## Demo Description

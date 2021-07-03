@@ -43,19 +43,18 @@
 <p align="center">智能灯</p>
 </p>
 
-## Demo 目录
+## 文件介绍
 
 ```
-├── cloudfunctions             // 云函数目录
-│   ├── ty-service            // SDK
-├── miniprogram                 // 小程序主目录
-│   ├── image                   // 图片库
-│   ├── libs                   // 第三方库
-│   ├── pages                  // 具体页面的目录
-│   ├── app.js                 // 小程序入口
-│   ├── app.json               // 配置文件
-├── project.config.json        // 项目配置文件
-└── README.md            // 说明文件
+├── components             // 组件库
+├── image                  // 图片库
+├── libs                   // 第三方库
+├── pages                  // 具体页面的目录
+├── utils                  // 基础工具库
+├── app.js                 // 小程序入口
+├── app.json               // 小程序全局配置文件
+├── project.config.json    // 项目配置文件
+└── README.md              // 说明文件
 ```
 
 ## Demo 说明
