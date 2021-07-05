@@ -15,7 +15,7 @@ export const getClientId = () => {
   return request({
     name: 'ty-service',
     data: {
-      action: 'getClientId',
+      action: 'dangerous.getClientId',
       params: {}
     }
   })

@@ -18,9 +18,12 @@
   },
   "plugins": {
     "tuya-ap-plugin": {
-      "version": "3.3.18",
+      "version": "3.3.23",
       "provider": "wxd2aa51ffacc3ff86"
     }
+  },
+  "permission": {
+    "scope.userLocation": { "desc": "你的位置信息将用于家庭位置、天气、智能、设备等功能的使用" }
   },
   "sitemapLocation": "sitemap.json"
 }
